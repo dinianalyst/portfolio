@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#080706" />
+    <title>Dinesh Elumalai — AI & Data Science</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="Home">
+        <span class="brand-mark">DE</span>
+        <span>DINESH ELUMALAI</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a class="active" href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#skills">Skills</a>
+        <a href="#resume">Résumé</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="menu" id="menu" aria-label="Toggle menu"><span></span><span></span></button>
+    </header>
+
+    <main>
+      <div class="video-stage" aria-hidden="true">
+        <video id="film" muted preload="auto" playsinline>
+          <source src="./media/film.mp4" type="video/mp4" />
+        </video>
+        <div class="film-grade"></div>
+      </div>
+
+      <section class="panel hero" id="home">
+        <div class="hero-copy">
+          <p class="intro">Hi, I’m</p>
+          <h1><span>Dinesh</span> <em>Elumalai</em></h1>
+          <p class="tagline"><span>I build</span> <strong id="rotatingText">RAG-powered assistants</strong></p>
+          <p class="lede">AI &amp; Data Science graduate building practical LLM applications with Python, LangChain, FastAPI, and vector databases—turning complex data into useful answers.</p>
+        </div>
+        <a class="scroll-cue" href="#about"><span>SCROLL TO BEGIN</span><i>↓</i></a>
+      </section>
+
+      <section class="panel about" id="about">
+        <div class="content-card">
+          <p class="section-index">01 / ABOUT</p>
+          <h2>ENGINEERING<br /><em>INTELLIGENCE</em></h2>
+          <p class="body-copy">AI and Data Science graduate with strong foundations in Python, Machine Learning, Deep Learning, and Generative AI. I build LLM-powered applications using prompt engineering, RAG, LangChain, and vector databases.</p>
+          <div class="stats">
+            <div><strong>8.2</strong><span>CGPA</span></div>
+            <div><strong>2026</strong><span>Graduate</span></div>
+            <div><strong>3+</strong><span>AI projects</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel work" id="work">
+        <div class="content-card wide">
+          <p class="section-index">02 / SELECTED WORK</p>
+          <h2>FEATURED<br /><em>PROJECTS</em></h2>
+          <div class="project-list">
+            <article>
+              <span>01</span>
+              <div><h3>NeuroPick</h3><p>AI product recommendation with ML, NLP and sentiment analysis.</p></div>
+              <b>↗</b>
+            </article>
+            <article>
+              <span>02</span>
+              <div><h3>DocuChat AI</h3><p>RAG document assistant for context-aware PDF question answering.</p></div>
+              <b>↗</b>
+            </article>
+            <article>
+              <span>03</span>
+              <div><h3>AI Customer Support</h3><p>Context-aware support agent using LangChain and FastAPI.</p></div>
+              <b>↗</b>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel skills" id="skills">
+        <div class="content-card">
+          <p class="section-index">03 / EXPERTISE</p>
+          <h2>MY <em>STACK</em></h2>
+          <div class="skill-cloud">
+            <span>Python</span><span>SQL</span><span>Machine Learning</span><span>Deep Learning</span>
+            <span>Generative AI</span><span>LLMs</span><span>LangChain</span><span>RAG</span>
+            <span>Prompt Engineering</span><span>FastAPI</span><span>Pinecone</span><span>ChromaDB</span>
+            <span>AWS</span><span>Docker</span><span>Git</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel resume" id="resume">
+        <div class="content-card resume-card">
+          <p class="section-index">04 / RÉSUMÉ</p>
+          <h2>THE <em>JOURNEY</em></h2>
+          <div class="timeline">
+            <article><time>2024</time><div><h3>Artificial Intelligence</h3><p>Skill Vertex · Internship</p></div></article>
+            <article><time>2024</time><div><h3>Data Management</h3><p>Flipkart & Quess corp Ltd.</p></div></article>
+            <article><time>2026</time><div><h3>Data Analyst</h3><p>NoviTech · Internship</p></div></article>
+          </div>
+          <a class="cta" href="./media/resume.pdf" download>Download résumé <span>↓</span></a>
+        </div>
+      </section>
+
+      <section class="panel contact" id="contact">
+        <div class="content-card contact-card">
+          <p class="section-index">05 / CONTACT</p>
+          <h2>LET’S BUILD<br /><em>SOMETHING.</em></h2>
+          <a class="email" href="mailto:dini.elumalai@gmail.com">dini.elumalai@gmail.com</a>
+          <div class="contact-links">
+            <a href="https://www.linkedin.com/in/dinesh-elumalai-616569259" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+            <a href="tel:+919094220997">+91 90942 20997</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+    <script src="./app.js"></script>
+  </body>
+</html>
