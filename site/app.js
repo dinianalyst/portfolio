@@ -86,10 +86,15 @@ const revealObserver = new IntersectionObserver((entries) => {
 
 sections.forEach((section) => revealObserver.observe(section));
 
-document.getElementById("menu").addEventListener("click", () => {
-  document.querySelector("nav").classList.toggle("open");
+const menu = document.getElementById("menu");
+const navigation = document.querySelector("nav");
+
+menu.addEventListener("click", () => {
+  const isOpen = navigation.classList.toggle("open");
+  menu.setAttribute("aria-expanded", String(isOpen));
 });
 
 navLinks.forEach((link) => link.addEventListener("click", () => {
-  document.querySelector("nav").classList.remove("open");
+  navigation.classList.remove("open");
+  menu.setAttribute("aria-expanded", "false");
 }));
