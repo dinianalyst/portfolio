@@ -21,7 +21,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./style.css?v=portfolio-polish-9" />
+    <link rel="stylesheet" href="./style.css?v=portfolio-polish-14" />
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
@@ -203,7 +203,27 @@
             <article><time>2024</time><div><h3>Data Management</h3><p>Flipkart & Quess corp Ltd.</p></div></article>
             <article><time>2026</time><div><h3>Data Analyst</h3><p>NoviTech · Internship</p></div></article>
           </div>
-          <a class="cta" href="./media/resume.pdf" download>Download résumé <span>↓</span></a>
+          <a class="cta resume-download" href="./media/resume.pdf" download data-resume-download>
+            <span class="download-label">Download résumé</span>
+            <span class="download-visual" aria-hidden="true">
+              <span class="download-arrow">↓</span>
+              <span class="download-file">PDF</span>
+              <span class="download-sparks"></span>
+            </span>
+          </a>
+          <p class="download-status" id="resumeDownloadStatus" role="status"></p>
+          <span class="resume-flight" aria-hidden="true">
+            <span class="resume-flight-page">
+              <span class="resume-page-monogram">DE</span>
+              <span class="resume-page-name">DINESH ELUMALAI</span>
+              <span class="resume-page-subtitle">AI ENGINEER</span>
+              <span class="resume-page-rule"></span>
+              <span class="resume-page-line"></span>
+              <span class="resume-page-line short"></span>
+              <span class="resume-page-line"></span>
+              <span class="resume-page-stamp">PDF</span>
+            </span>
+          </span>
         </div>
       </section>
 
@@ -223,6 +243,32 @@
     </main>
 
     <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
-    <script src="./app.js?v=portfolio-polish-3"></script>
+    <div class="resume-launch-scene" id="resumeLaunchScene" aria-hidden="true">
+      <div class="resume-launch-art">
+        <svg class="resume-launch-orbit" viewBox="0 0 500 500" aria-hidden="true">
+          <circle class="launch-orbit-track" cx="250" cy="250" r="205" />
+          <ellipse class="launch-orbit-track launch-orbit-dash" cx="250" cy="250" rx="136" ry="205" transform="rotate(58 250 250)" />
+          <ellipse class="launch-orbit-track launch-orbit-dash launch-orbit-reverse" cx="250" cy="250" rx="136" ry="205" transform="rotate(-58 250 250)" />
+          <circle class="launch-orbit-track launch-orbit-inner" cx="250" cy="250" r="158" />
+          <path class="launch-orbit-path" d="M38 316C115 316 115 184 192 184s77 132 154 132 77-132 154-132" />
+          <circle class="launch-orbit-node" cx="38" cy="316" r="4" />
+          <circle class="launch-orbit-node" cx="192" cy="184" r="4" />
+          <circle class="launch-orbit-node" cx="346" cy="316" r="4" />
+          <circle class="launch-orbit-node" cx="500" cy="184" r="4" />
+        </svg>
+        <div class="resume-launch-document">
+          <span class="resume-launch-scan"></span>
+          <div class="resume-launch-header"><span class="resume-launch-monogram">DE</span><span>CAREER DOSSIER</span><span>2026</span></div>
+          <p class="resume-launch-kicker">AI &amp; DATA SCIENCE</p>
+          <h2>DINESH<br /><em>ELUMALAI</em></h2>
+          <p class="resume-launch-role"><i></i> JUNIOR AI ENGINEER</p>
+          <p class="resume-launch-summary">Building useful intelligence from data, language, and bold ideas.</p>
+          <div class="resume-launch-skills"><span>GENERATIVE AI</span><span>RAG SYSTEMS</span><span>PYTHON</span></div>
+          <div class="resume-launch-footer"><span>EXPERIENCE · PROJECTS · EDUCATION</span><b>PDF / 01</b></div>
+        </div>
+      </div>
+      <p class="resume-launch-caption"><span>CAREER FILE · READY</span> YOUR NEXT CHAPTER, IN MOTION</p>
+    </div>
+    <script src="./app.js?v=portfolio-polish-5"></script>
   </body>
 </html>

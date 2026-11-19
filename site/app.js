@@ -123,6 +123,28 @@ navLinks.forEach((link) => link.addEventListener("click", () => {
   menu.setAttribute("aria-expanded", "false");
 }));
 
+const resumeDownload = document.querySelector("[data-resume-download]");
+const resumeDownloadStatus = document.getElementById("resumeDownloadStatus");
+const resumeLaunchScene = document.getElementById("resumeLaunchScene");
+let resumeDownloadTimeout = 0;
+
+resumeDownload.addEventListener("click", () => {
+  const resumeCard = resumeDownload.closest(".resume-card");
+  window.clearTimeout(resumeDownloadTimeout);
+  resumeCard.classList.remove("is-downloading");
+  resumeLaunchScene.classList.remove("is-active");
+  void resumeCard.offsetWidth;
+  resumeCard.classList.add("is-downloading");
+  if (!prefersReducedMotion) resumeLaunchScene.classList.add("is-active");
+  resumeDownloadStatus.textContent = "Your résumé download has started.";
+
+  resumeDownloadTimeout = window.setTimeout(() => {
+    resumeCard.classList.remove("is-downloading");
+    resumeLaunchScene.classList.remove("is-active");
+    resumeDownloadStatus.textContent = "";
+  }, 3200);
+});
+
 const demoForm = document.getElementById("ragDemoForm");
 const demoQuestion = document.getElementById("ragQuestion");
 const demoAnswer = document.getElementById("demoAnswer");
