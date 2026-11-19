@@ -4,13 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#080706" />
-    <title>Dinesh Elumalai — AI & Data Science</title>
+    <meta name="description" content="Explore Dinesh Elumalai’s AI and data science projects, including RAG document intelligence, research paper search, and an interactive machine-learning playground." />
+    <link rel="canonical" href="https://dinesh-elumalai-portfolio.vercel.app/" />
+    <link rel="icon" href="./media/favicon.svg" type="image/svg+xml" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://dinesh-elumalai-portfolio.vercel.app/" />
+    <meta property="og:title" content="Dinesh Elumalai | AI & Data Science" />
+    <meta property="og:description" content="AI and data science projects in RAG, research intelligence, and interactive machine learning." />
+    <meta property="og:image" content="https://dinesh-elumalai-portfolio.vercel.app/media/skills-technologies.png" />
+    <meta property="og:image:alt" content="Dinesh Elumalai and his AI, machine-learning, and software development skills" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Dinesh Elumalai | AI & Data Science" />
+    <meta name="twitter:description" content="AI and data science projects in RAG, research intelligence, and interactive machine learning." />
+    <meta name="twitter:image" content="https://dinesh-elumalai-portfolio.vercel.app/media/skills-technologies.png" />
+    <title>Dinesh Elumalai | AI & Data Science</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./style.css?v=mobile-layout-1" />
+    <link rel="stylesheet" href="./style.css?v=portfolio-polish-9" />
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
     <header class="topbar">
       <a class="brand" href="#home" aria-label="Home">
         <span class="brand-mark">DE</span>
@@ -20,6 +34,7 @@
         <a class="active" href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#work">Work</a>
+        <a href="#demo">Demo</a>
         <a href="#skills">Skills</a>
         <a href="#resume">Résumé</a>
         <a href="#contact">Contact</a>
@@ -27,9 +42,10 @@
       <button class="menu" id="menu" type="button" aria-label="Toggle menu" aria-controls="primaryNavigation" aria-expanded="false"><span></span><span></span></button>
     </header>
 
-    <main>
+    <main id="main-content" tabindex="-1">
       <div class="video-stage" aria-hidden="true">
-        <video id="film" muted preload="auto" playsinline>
+        <img id="homePortrait" src="./media/dinesh-portrait.png" alt="" width="768" height="960" decoding="async" fetchpriority="high" />
+        <video id="film" muted preload="auto" playsinline poster="./media/dinesh-portrait.png">
           <source src="./media/film.mp4" type="video/mp4" />
         </video>
         <div class="film-grade"></div>
@@ -41,11 +57,16 @@
           <h1><span>Dinesh</span> <em>Elumalai</em></h1>
           <p class="tagline"><span>I build</span> <strong id="rotatingText">RAG-powered assistants</strong></p>
           <p class="lede">AI &amp; Data Science graduate building practical LLM applications with Python, LangChain, FastAPI, and vector databases—turning complex data into useful answers.</p>
+          <p class="current-role"><i aria-hidden="true"></i><span class="role-label">CURRENT ROLE</span><strong>Junior AI Engineer</strong><span>at</span><span>Cherubim AI Infosoft</span></p>
         </div>
         <a class="scroll-cue" href="#about"><span>SCROLL TO BEGIN</span><i>↓</i></a>
       </section>
 
       <section class="panel about" id="about">
+        <figure class="about-portrait">
+          <img src="./media/dinesh-portrait.png" alt="Dinesh Elumalai in a black suit" width="768" height="960" loading="lazy" decoding="async" />
+          <figcaption><strong>DINESH ELUMALAI</strong><span>AI &amp; DATA SCIENCE</span></figcaption>
+        </figure>
         <div class="content-card">
           <p class="section-index">01 / ABOUT</p>
           <h2>ENGINEERING<br /><em>INTELLIGENCE</em></h2>
@@ -61,30 +82,107 @@
       <section class="panel work" id="work">
         <div class="content-card wide">
           <p class="section-index">02 / SELECTED WORK</p>
-          <h2>FEATURED<br /><em>PROJECTS</em></h2>
-          <div class="project-list">
-            <article>
-              <span>01</span>
-              <div><h3>NeuroPick</h3><p>AI product recommendation with ML, NLP and sentiment analysis.</p></div>
-              <b>↗</b>
-            </article>
-            <article>
-              <span>02</span>
-              <div><h3>DocuChat AI</h3><p>RAG document assistant for context-aware PDF question answering.</p></div>
-              <b>↗</b>
-            </article>
-            <article>
-              <span>03</span>
-              <div><h3>AI Customer Support</h3><p>Context-aware support agent using LangChain and FastAPI.</p></div>
-              <b>↗</b>
-            </article>
+            <h2>PROJECT<br /><em>CASE STUDIES</em></h2>
+            <div class="case-study-list">
+              <article class="case-study-card">
+                <div class="project-card-heading">
+                  <div><p class="project-type">01 / DOCUMENT INTELLIGENCE</p><h3>DocuMind AI</h3></div>
+                  <span class="project-fact">3 sample documents</span>
+                </div>
+                <p class="project-summary">A RAG document assistant that answers across PDFs, Word documents, and text files with page-level source citations.</p>
+                <div class="project-tags" aria-label="Technologies"><span>Python</span><span>FastAPI</span><span>ChromaDB</span><span>React</span><span>TypeScript</span></div>
+                <div class="project-links">
+                  <a href="https://github.com/dinianalyst/DocuMind-Ai" target="_blank" rel="noopener noreferrer">View source ↗</a>
+                  <a href="#demo">Try sample Q&amp;A ↓</a>
+                </div>
+                <details class="case-study-details">
+                  <summary>Problem, approach &amp; scope</summary>
+                  <div class="case-study-detail">
+                    <p><strong>Problem</strong>Finding trustworthy answers in long documents takes time and makes it easy to lose the source context.</p>
+                    <p><strong>Approach</strong>Parse and chunk documents, retrieve relevant passages from a vector store, then ground answers in those passages.</p>
+                    <p><strong>Outcome</strong>Three preloaded documents make it possible to try source-grounded answers and page citations without adding API credentials.</p>
+                  </div>
+                </details>
+              </article>
+              <article class="case-study-card">
+                <div class="project-card-heading">
+                  <div><p class="project-type">02 / INTERACTIVE MACHINE LEARNING</p><h3>DataPulse AI</h3></div>
+                  <span class="project-fact">Runs in browser</span>
+                </div>
+                <p class="project-summary">An interactive data-science playground for exploring data quality, feature distributions, model training, and what-if predictions.</p>
+                <div class="project-tags" aria-label="Technologies"><span>JavaScript</span><span>Data profiling</span><span>Model training</span><span>Inference</span></div>
+                <div class="project-links">
+                  <a href="https://researchpaper-rag-qp3w.vercel.app/" target="_blank" rel="noopener noreferrer">Open live playground ↗</a>
+                  <a href="https://github.com/dinianalyst/DataPulse-AI" target="_blank" rel="noopener noreferrer">View source ↗</a>
+                </div>
+                <details class="case-study-details">
+                  <summary>Problem, approach &amp; scope</summary>
+                  <div class="case-study-detail">
+                    <p><strong>Problem</strong>It can be difficult to understand a dataset’s quality and feature relationships before choosing a model.</p>
+                    <p><strong>Approach</strong>Keep the playground in the browser and bring profiling, visualization, training controls, and inference together.</p>
+                    <p><strong>Outcome</strong>Users can move from data profiling through model training to what-if predictions entirely in the browser.</p>
+                  </div>
+                </details>
+              </article>
+              <article class="case-study-card">
+                <div class="project-card-heading">
+                  <div><p class="project-type">03 / RESEARCH PAPER RAG</p><h3>Research Paper RAG</h3></div>
+                  <span class="project-fact">60+ papers</span>
+                </div>
+                <p class="project-summary">A source-cited research assistant for technical questions about LLM quantization, FlashAttention, speculative decoding, and KV-cache compression.</p>
+                <div class="project-tags" aria-label="Project themes"><span>RAG</span><span>LLM systems</span><span>Research</span><span>Citations</span></div>
+                <div class="project-links">
+                  <a href="https://github.com/dinianalyst/ResearchpaperRAG" target="_blank" rel="noopener noreferrer">View source ↗</a>
+                </div>
+                <details class="case-study-details">
+                  <summary>Problem, approach &amp; scope</summary>
+                  <div class="case-study-detail">
+                    <p><strong>Problem</strong>Technical details are spread across many research papers and are hard to compare quickly.</p>
+                    <p><strong>Approach</strong>Use retrieval-augmented question answering to find relevant research passages and keep answers connected to sources.</p>
+                    <p><strong>Outcome</strong>The knowledge base covers more than 60 papers across four LLM-systems topics.</p>
+                  </div>
+                </details>
+              </article>
+            </div>
+            <details class="project-archive">
+              <summary>More projects from my portfolio</summary>
+              <div>
+                <p><strong>NeuroPick</strong> — Product recommendations using machine learning, NLP, and sentiment analysis.</p>
+                <p><strong>AI Customer Support</strong> — A context-aware support agent using LangChain and FastAPI.</p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel demo" id="demo">
+        <div class="content-card demo-card">
+          <p class="section-index">03 / INTERACTIVE PREVIEW</p>
+          <h2>ASK THE<br /><em>DOCUMENTS</em></h2>
+          <p class="demo-intro">Try source-grounded questions inspired by DocuMind AI’s documented sample corpus.</p>
+          <p class="demo-note">Offline portfolio preview: answers are prewritten examples, not live model responses. No question leaves your browser.</p>
+          <div class="demo-prompts" aria-label="Sample questions">
+            <button type="button" data-demo-question="What chunk size and overlap does the handbook recommend?">Chunking guidance</button>
+            <button type="button" data-demo-question="How does the assistant handle unsupported answers?">Grounded answers</button>
+            <button type="button" data-demo-question="Which documents are included in the sample corpus?">Sample documents</button>
+          </div>
+          <form id="ragDemoForm" class="demo-form">
+            <label class="sr-only" for="ragQuestion">Ask about the sample documents</label>
+            <input id="ragQuestion" name="question" type="search" placeholder="Ask a question about the sample documents…" autocomplete="off" required />
+            <button class="demo-submit" type="submit">Ask <span>↗</span></button>
+          </form>
+          <div id="demoAnswer" class="demo-answer" role="status" aria-live="polite" aria-atomic="true">
+            <p>Choose a sample question to see an answer with its source.</p>
           </div>
         </div>
       </section>
 
       <section class="panel skills" id="skills">
+        <figure class="skills-visual">
+          <img src="./media/skills-technologies.png" alt="Illustrated overview of Dinesh’s skills and tools, including Python, AI and machine learning, GenAI, vector databases, FastAPI, Docker, VS Code, and Jupyter" width="960" height="768" loading="lazy" decoding="async" />
+        </figure>
         <div class="content-card">
-          <p class="section-index">03 / EXPERTISE</p>
+          <p class="section-index">04 / EXPERTISE</p>
           <h2>MY <em>STACK</em></h2>
           <div class="skill-cloud">
             <span>Python</span><span>SQL</span><span>Machine Learning</span><span>Deep Learning</span>
@@ -97,9 +195,10 @@
 
       <section class="panel resume" id="resume">
         <div class="content-card resume-card">
-          <p class="section-index">04 / RÉSUMÉ</p>
+          <p class="section-index">05 / RÉSUMÉ</p>
           <h2>THE <em>JOURNEY</em></h2>
           <div class="timeline">
+            <article class="current-role-entry"><time>Current</time><div><h3>Junior AI Engineer</h3><p>Cherubim AI Infosoft</p></div></article>
             <article><time>2024</time><div><h3>Artificial Intelligence</h3><p>Skill Vertex · Internship</p></div></article>
             <article><time>2024</time><div><h3>Data Management</h3><p>Flipkart & Quess corp Ltd.</p></div></article>
             <article><time>2026</time><div><h3>Data Analyst</h3><p>NoviTech · Internship</p></div></article>
@@ -110,18 +209,20 @@
 
       <section class="panel contact" id="contact">
         <div class="content-card contact-card">
-          <p class="section-index">05 / CONTACT</p>
+          <p class="section-index">06 / CONTACT</p>
           <h2>LET’S BUILD<br /><em>SOMETHING.</em></h2>
-          <a class="email" href="mailto:dini.elumalai@gmail.com">dini.elumalai@gmail.com</a>
+          <p class="contact-intro">Have an AI idea, a data challenge, or a project in mind? I’d be glad to hear about it.</p>
+          <a class="email" href="mailto:dini.elumalai@gmail.com"><span>dini.elumalai@gmail.com</span><strong aria-hidden="true">↗</strong></a>
           <div class="contact-links">
-            <a href="https://www.linkedin.com/in/dinesh-elumalai-616569259" target="_blank" rel="noreferrer">LinkedIn ↗</a>
-            <a href="tel:+919094220997">+91 90942 20997</a>
+            <a href="https://www.linkedin.com/in/dinesh-elumalai-616569259" target="_blank" rel="noopener noreferrer"><span>PROFESSIONAL</span><strong>LinkedIn ↗</strong></a>
+            <a href="https://github.com/dinianalyst" target="_blank" rel="noopener noreferrer"><span>PROJECTS &amp; CODE</span><strong>GitHub ↗</strong></a>
+            <a href="tel:+919094220997"><span>CALL OR MESSAGE</span><strong>+91 90942 20997 ↗</strong></a>
           </div>
         </div>
       </section>
     </main>
 
     <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
-    <script src="./app.js"></script>
+    <script src="./app.js?v=portfolio-polish-3"></script>
   </body>
 </html>
